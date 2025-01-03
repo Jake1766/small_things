@@ -9,6 +9,10 @@
 nums = [1, 2, 3, 4, 5]
 
 def sum_num(nums):
-    pass
-
-
+    sum_nums = []
+    for index in range(0, len(nums)):
+        #create sub arrays of list, beginning at 0 and ending at current for loop value
+        sub_array = nums[0:index+1:1]
+        sum_nums.append(sum(sub_array))
+    print(sum_nums)
+sum_num(nums)
