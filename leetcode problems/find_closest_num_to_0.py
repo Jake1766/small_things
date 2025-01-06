@@ -9,6 +9,7 @@ def closest_to_zero(nums):
             distances.append(num)
         else:
             distances.append(num)
+
     #find closest value
     closest = distances[0]
     for distance in distances:
@@ -20,6 +21,12 @@ def closest_to_zero(nums):
         return closest
     else:
         return closest * -1
+
+#using a single pass
+def closest_to_zero2(nums):
+    for num in nums:
+
+
 
 
 
