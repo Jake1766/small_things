@@ -1,17 +1,26 @@
-nums = [-4,-2,1,4,8]
-
+nums = [-4, -2, 1,-1, 4, 8]
+nums2 = [-10000, -10000]
 def closest_to_zero(nums):
     distances = []
-    closest = []
+    #create positive array
     for num in nums:
         if num < 0:
-            distances.append(num * -1)
+            num = num * -1
+            distances.append(num)
         else:
             distances.append(num)
-
+    #find closest value
+    closest = distances[0]
     for distance in distances:
+        if distance < closest:
+            closest = distance
 
-    print(distances)
+    #if + value exists return it
+    if closest in nums:
+        return closest
+    else:
+        return closest * -1
 
 
-print(closest_to_zero(nums))
+
+print(closest_to_zero(nums2))
