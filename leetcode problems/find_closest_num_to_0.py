@@ -24,7 +24,11 @@ def closest_to_zero(nums):
 
 #using a single pass
 def closest_to_zero2(nums):
+    first_run = true
+    closest = nums[0]
     for num in nums:
+
+
 
 
 
