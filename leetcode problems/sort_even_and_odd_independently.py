@@ -23,7 +23,18 @@ def sort(arr):
     print(odds)
     print(evens)
 
+    flipper = True
+    nums2 = []
     for i in range(len(arr)):
+        if flipper:
+            nums2.append(evens[0])
+            del evens[0]
+            flipper = False
+        else:
+            nums2.append(odds[0])
+            del odds[0]
+            flipper = True
+    return nums2
 
 
 sort(nums1)
