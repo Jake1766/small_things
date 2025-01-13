@@ -20,9 +20,6 @@ def sort(arr):
     odds = sorted(odds, reverse=True)
     evens = sorted(evens)
 
-    print(odds)
-    print(evens)
-
     flipper = True
     nums2 = []
     for i in range(len(arr)):
