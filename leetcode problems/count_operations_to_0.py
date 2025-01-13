@@ -11,4 +11,13 @@ num2 = 3
 # output should be 3
 
 def count_0(num1, num2):
-    pass
+    zero = False
+    count = 0
+    while not zero:
+        if num1 <= num2:
+            value = num2 - num1
+        else:
+            value = num1 - num2
+
+        print("value is: ", value)
+        count += 1
