@@ -15,9 +15,16 @@ def count_0(num1, num2):
     count = 0
     while not zero:
         if num1 <= num2:
-            value = num2 - num1
+            num2 = num2 - num1
         else:
-            value = num1 - num2
+            num1 = num1 - num2
 
-        print("value is: ", value)
+        print("num1: ", num1, "\nnum2: ", num2)
         count += 1
+
+        if num1 == 0 or num2 == 0:
+            zero = True
+    print("count = ", count)
+    return count
+
+count_0(num1, num2)
