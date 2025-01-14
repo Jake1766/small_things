@@ -5,14 +5,17 @@
 # repeat until 0 is reached
 # return number of cycles taken to reach 0
 
-num1 = 2
-num2 = 3
+num1 = 0
+num2 = 0
 
 # output should be 3
 
 def count_0(num1, num2):
     zero = False
     count = 0
+    if num1 == 0 and num2 == 0:
+        return 0
+
     while not zero:
         if num1 <= num2:
             num2 = num2 - num1
