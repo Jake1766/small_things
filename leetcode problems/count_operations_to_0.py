@@ -8,7 +8,7 @@
 num1 = 0
 num2 = 0
 
-# output should be 3
+# output should be 0
 
 def count_0(num1, num2):
     zero = False
