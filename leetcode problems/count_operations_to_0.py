@@ -5,7 +5,7 @@
 # repeat until 0 is reached
 # return number of cycles taken to reach 0
 
-num1 = 0
+num1 = 99999
 num2 = 1
 
 # output should be 0
