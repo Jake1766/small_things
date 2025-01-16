@@ -6,7 +6,7 @@
 # return number of cycles taken to reach 0
 
 num1 = 0
-num2 = 0
+num2 = 1
 
 # output should be 0
 
