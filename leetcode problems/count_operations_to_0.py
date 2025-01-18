@@ -43,6 +43,13 @@ def count_0(num1, num2):
     return count
 
 def count2_0(num1, num2):
+    if num1 > num2:
+        numerator = num1
+        denominator = num2
+    else:
+        numerator = num2
+        denominator = num1
+    quotient = num2
     print(num2/num1)
 
 print(count_0(num1, num2))
