@@ -34,19 +34,19 @@ def count_0(num1, num2):
             num2 = num2 - num1
         else:
             if num1 % num2 == 0:
-                return num2 / num1
+                return num1 / num2
             num1 = num1 - num2
 
         if num1 == 0 or num2 == 0:
             zero = True
-
-        print("num1: ", num1, "\nnum2: ", num2)
         count += 1
 
     print("count = ", count)
     return count
 
+
 def count2_0(num1, num2):
+
     if num1 > num2:
         numerator = num1
         denominator = num2
@@ -56,5 +56,6 @@ def count2_0(num1, num2):
     quotient = numerator/denominator
     print(quotient)
 
-count_0(num1, num2)
+
+print("function 1: ", count_0(num1, num2))
 count2_0(num1, num2)
