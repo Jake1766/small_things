@@ -23,21 +23,25 @@ num2 = 3
 def count_0(num1, num2):
     zero = False
     count = 0
+
     if num1 == 0 or num2 == 0:
         return count
 
     while not zero:
         if num1 <= num2:
+            if num2 % num1 == 0:
+                return num2 / num1
             num2 = num2 - num1
         else:
+            if num1 % num2 == 0:
+                return num2 / num1
             num1 = num1 - num2
-        #conditional essential to break loop
+
         if num1 == 0 or num2 == 0:
             zero = True
 
         print("num1: ", num1, "\nnum2: ", num2)
         count += 1
-
 
     print("count = ", count)
     return count
@@ -49,7 +53,8 @@ def count2_0(num1, num2):
     else:
         numerator = num2
         denominator = num1
-    quotient = num2
-    print(num2/num1)
+    quotient = numerator/denominator
+    print(quotient)
 
-print(count_0(num1, num2))
+count_0(num1, num2)
+count2_0(num1, num2)
