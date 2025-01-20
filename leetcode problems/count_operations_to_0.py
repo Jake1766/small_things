@@ -34,10 +34,13 @@ def count_0(num1, num2):
             if num2 % num1 == 0:
                 return num2 / num1
             num2 = num2 - num1
+            print("num2 is: ", num2)
+
         else:
             if num1 % num2 == 0:
                 return num1 / num2
             num1 = num1 - num2
+            print("num1 is: ", num2)
 
         if num1 == 0 or num2 == 0:
             zero = True
@@ -59,5 +62,4 @@ def count2_0(num1, num2):
     print(quotient)
 
 
-print("function 1: ", count_0(num1, num2))
-count2_0(num1, num2)
+print("function 1 output: ", count_0(num1, num2))
