@@ -24,6 +24,8 @@ def count_0(num1, num2):
     zero = False
     count = 0
 
+    # check if either value is zero,
+    # returns 0 if true as zero has been reached
     if num1 == 0 or num2 == 0:
         return count
 
