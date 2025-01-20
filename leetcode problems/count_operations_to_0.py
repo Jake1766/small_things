@@ -32,13 +32,13 @@ def count_0(num1, num2):
     while not zero:
         if num1 <= num2:
             if num2 % num1 == 0:
-                return num2 / num1
+                return (num2 / num1) + count
             num2 = num2 - num1
             print("num2 is: ", num2)
 
         else:
             if num1 % num2 == 0:
-                return num1 / num2
+                return (num1 / num2) + count
             num1 = num1 - num2
             print("num1 is: ", num2)
 
@@ -46,7 +46,7 @@ def count_0(num1, num2):
             zero = True
         count += 1
 
-    print("count = ", count)
+        print("count = ", count)
     return count
 
 
@@ -62,4 +62,4 @@ def count2_0(num1, num2):
     print(quotient)
 
 
-print("function 1 output: ", count_0(num1, num2))
+print("function 1 output: ", int(count_0(num1, num2)))
