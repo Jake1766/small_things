@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/count-operations-to-obtain-zero/description/
 
+# code would benefit from heavy optimisation
+
 # num1 and num2 are provided
 # subtract smaller num from larger num
 # repeat until 0 is reached
